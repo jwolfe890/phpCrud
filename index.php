@@ -15,9 +15,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand crud" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button> -->
 
   <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -31,7 +31,7 @@
   </div> -->
 </nav>
 
-<ul class="nav nav-tabs ml-5" role="tablist">
+<ul class="nav nav-tabs ml-5 mt-3" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" href="#index" role="tab" data-toggle="tab">Index</a>
   </li>
@@ -50,7 +50,9 @@
 <div class="tab-content">
   <div role="tabpanel" class="tab-pane fade in active" id="index">...</div>
   <div role="tabpanel" class="tab-pane fade" id="login">bbb</div>
-  <div role="tabpanel" class="tab-pane fade" id="signup">ccc</div>
+  <div role="tabpanel" class="tab-pane fade" id="signup">
+    <?php include("./user/signup.php"); ?>
+  </div>
   <div role="tabpanel" class="tab-pane fade" id="admin">ccc</div>
 </div>
 
