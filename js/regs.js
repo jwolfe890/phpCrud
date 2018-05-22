@@ -1,35 +1,39 @@
 $(document).ready(function(){
     $("#submit").click(function(e){
+
+        e.preventDefault();
+
         var email = $("#email").val();
         var firstname = $("#firstname").val();
-        var lastname = $("#lastname").val();   
+        var lastname = $("#lastname").val();  
+        var password = $("#password").val();   
     
         if (firstname == "") {
             valid = false;
-            $("#errorFirstname").html("Firstname cannot be empty");
+            $("#errorFirstname").html("First name cannot be empty");
         } else {
             $("#errorFirstname").html("");
         }
 
         if(lastname == ""){
             valid = false;
-            $("#errorLastname").html("Lastname cannot be empty");
+            $("#errorLastname").html("Last name cannot be empty");
         } else {
             $("#errorLastname").html("");
         }
 
         if(email == ""){
             valid = false;
-            $("#email").html("Email cannot be empty");
+            $("#errorEmail").html("Email cannot be empty");
         } else {
-            $("#email").html("");
+            $("#errorEmail").html("");
         }
     
         if(password == ""){
             valid = false;
-            $("#password").html("Password cannot be empty");
+            $("#errorPassword").html("Password cannot be empty");
         } else {
-            $("#password").html("");
+            $("#errorPassword").html("");
         }
 
     });

@@ -22,3 +22,7 @@ body {
     border-radius: 5px;
     padding: 10px 10px 10px 10px;
 }
+
+#errorFirstname, #errorLastname, #errorEmail, #errorPassword {
+    color: red;
+}
