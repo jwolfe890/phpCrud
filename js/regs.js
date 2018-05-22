@@ -8,23 +8,23 @@ $(document).ready(function(){
         var lastname = $("#lastname").val();  
         var password = $("#password").val();   
     
-        if (firstname == "") {
+        if (firstname == "" || !isNameValid(firstname)) {
             valid = false;
-            $("#errorFirstname").html("First name cannot be empty");
+            $("#errorFirstname").html("First name cannot be empty or must be valid");
         } else {
             $("#errorFirstname").html("");
         }
 
-        if(lastname == ""){
+        if(lastname == "" || !isNameValid(lastname)){
             valid = false;
-            $("#errorLastname").html("Last name cannot be empty");
+            $("#errorLastname").html("Last name cannot be empty or must be valid");
         } else {
             $("#errorLastname").html("");
         }
 
-        if(email == ""){
+        if(email == "" || !isemailValid(email)){
             valid = false;
-            $("#errorEmail").html("Email cannot be empty");
+            $("#errorEmail").html("Email cannot be empty or must be valid");
         } else {
             $("#errorEmail").html("");
         }
@@ -38,3 +38,12 @@ $(document).ready(function(){
 
     });
 }); 
+
+function isNameValid(name) {
+    return /^[a-zA-Z '.-]{2,}?*$/.test(name)
+}
+
+
+function isemailValid(email) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)
+}
