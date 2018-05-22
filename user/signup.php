@@ -15,29 +15,30 @@
                 <div class="form-group row">
                     <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
                     <div class="col-sm-10">
-                    <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Email">
+                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabelLg" class="col-sm-2 col-form-label">Firstname</label>
                     <div class="col-sm-10">
-                    <input type="firstname" class="form-control form-control-lg" id="colFormLabel" placeholder="Firstname">
+                    <input type="firstname" class="form-control form-control-lg" id="firstname" placeholder="Firstname">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Lastname</label>
                     <div class="col-sm-10">
-                    <input type="lastname" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Lastname">
+                    <input type="lastname" class="form-control form-control-lg" id="lastname" placeholder="Lastname">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Password</label>
                     <div class="col-sm-10">
-                    <input type="password" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Password">
+                    <input type="password" class="form-control form-control-lg" id="password" placeholder="Password">
                     </div>
                 </div>
-            </form>
-            <button class="btn btn-primary btn-block" type="submit">Submit</button>
-</div>
+                <button class="btn btn-primary btn-block" id="submit" type="submit">Submit</button>
 
+            </form>
+        
+        </div>
     </div>
