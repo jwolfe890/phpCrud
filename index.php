@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/custom.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <title>CRUD  APPLICATION -- INDEX PAGE</title>
+    <title>!CRUD  APPLICATION -- INDEX PAGE</title>
     
     <script src="./js/regs.js"></script>
 
@@ -41,7 +41,7 @@
   <div role="tabpanel" class="tab-pane fade in active" id="index">...</div>
   <div role="tabpanel" class="tab-pane fade" id="login">bbb</div>
   <div role="tabpanel" class="tab-pane fade" id="signup">
-    <?php include("./user/signup.php"); ?>
+ <?php include("./user/signup.php"); ?> 
   </div>
   <div role="tabpanel" class="tab-pane fade" id="admin">ccc</div>
 </div>

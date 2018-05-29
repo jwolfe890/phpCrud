@@ -11,32 +11,32 @@
         <div class="form-border">
 
             <h3 ml-5 class="text-center">Welcome, Please Sign Up</h3>
-            <form>
+            <form action="" method="post">
                 <div class="form-group row">
                     <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Email</label>
                     <div class="col-sm-10">
-                    <input type="email" class="form-control form-control-lg" id="email" placeholder="Email">
+                    <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Email">
                     <span id="errorEmail"></span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabelLg" class="col-sm-2 col-form-label">Firstname</label>
                     <div class="col-sm-10">
-                    <input type="firstname" class="form-control form-control-lg" id="firstname" placeholder="Firstname">
+                    <input type="firstname" class="form-control form-control-lg" name="firstname" id="firstname" placeholder="Firstname">
                     <span id="errorFirstname"></span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Lastname</label>
                     <div class="col-sm-10">
-                    <input type="lastname" class="form-control form-control-lg" id="lastname" placeholder="Lastname">
+                    <input type="lastname" class="form-control form-control-lg" name="lastname" id="lastname" placeholder="Lastname">
                     <span id="errorLastname"></span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Password</label>
                     <div class="col-sm-10">
-                    <input type="password" class="form-control form-control-lg" id="password" placeholder="Password">
+                    <input type="password" class="form-control form-control-lg" name="password" id="password" placeholder="Password">
                     <span id="errorPassword"></span>
                     </div>
                 </div>
